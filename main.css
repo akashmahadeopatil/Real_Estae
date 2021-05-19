@@ -1,0 +1,241 @@
+*{
+	margin: 0 auto; 
+	/*padding: 0;
+	outline: none;*/
+	box-sizing: border-box;
+
+
+}	
+html{
+	height: 100%;
+	width: 100%
+}
+body
+		{
+			background-image: url(https://source.unsplash.com/1920x658/?buildings,cities);
+			background-repeat: no-repeat, repeat;
+		}
+@font-face {
+  font-family: Varela;
+  src: url(Varela-Regular.ttf);
+}
+/*Used for text inside the search box and the margin coming over the searchbar*/
+.wrapper{
+	position: absolute;
+	top: 50%;
+	left: 50%; 
+	transform: translate(-50%, -50%);
+	background: transparent; /*rgba(0,0,0.0,0.4)*/; /*change*/
+	max-width: 700px;
+	width: 100%;  
+	padding: 8px;
+    /*border-radius: 5px; */ /*change*/
+	display: flex; 
+	justify-content: space-between;
+}
+
+/*Used for the input box*/
+.wrapper .input{
+	width: 85%;   /*85*/
+	padding: 15px 30px;
+	border: none;
+	/*font-weight: bold;*/
+	font-size: 20px;
+
+
+}
+/*This is used for Search button*/
+.button{
+	background-color: #448ee4;
+	border: none;
+	padding: 30px;
+	color: white;
+	position: relative;
+	cursor: pointer;
+}
+/* This is used for the Buy Button*/
+.buy{
+	background-color: #0a6df0;
+	border: none;
+	padding: 20px;
+	color: white;
+	position: relative;
+	cursor: pointer;
+	font-family: varela;
+	position: absolute;
+	margin-top: -10%;
+	border-radius: 8px;
+}
+
+/*This is Used for Nav. Menu */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 6px;
+  overflow: hidden;
+  font-weight: bold;
+  font-size: 25px;
+  margin-right: -1%;
+  background-color: none;
+}
+/*Used for Nav. Menu Items */
+li {
+  float: right;
+}
+/* To show the Nav. Menu item color*/
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/*Menu Items other than Active ones*/
+li a:hover:not(.active) {
+  background-color: #111;
+}
+/* It is used for the current active page/button*/
+.active {
+  background-color: #4CAF50;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+/* It is Used for title Explore/Buy/Sell/Rent Property*/
+.title{
+		text-align: center;
+		margin-top: 40%;
+		color: #111;
+
+}
+/* It is Used for title Explore/Buy/Sell/Rent Property*/
+.t1{
+	font-size: 55px;
+	font-family: Varela;
+}
+/* It is Used for title Easy Way to Buy/Sell Properties*/
+.title1{
+		text-align: center;
+		margin-top: 5%;
+		color: #111;
+
+}
+.t2{
+	font-size: 65px;
+	font-family: Varela;
+
+}
+.title2{
+		text-align: center;
+		margin-top: 5%;
+		color: #111;
+
+}
+.t3{
+	font-size: 65px;
+	font-family: Varela;
+
+}
+
+
+
+/* Remove extra left and right margins, due to padding */
+.row {
+	margin: 0 -5px;
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 70px;
+  background-color: #f1f1f1;
+}
+/* Use to create img for EasyWays to buy/Sell Property*/
+.img1{
+	margin-top: 5%; 
+	
+}
+
+.img2{
+	height: 100px;
+	width: 100px;
+}
+.img3{
+	height: 230px;
+	width: 300px;
+}
+/* For the Line under the Explore Buy/Sell Baner*/
+.hr1{
+	margin-top: 4%
+}
+
+/* Css for Line75*/
+.newproperty{
+	padding: 15px;
+	position: absolute;
+	top: 1700px;
+	left: 300px;
+
+}
+/* Css for Line81*/
+.findproperty{
+	
+	top: 1700px;
+	left: 300px;
+	margin-bottom: 3%;
+}
+
+/* Css for Line87*/
+.searchbuyers{
+	padding: 15px;
+	position: absolute;
+	top: 1700px;
+	right: 300px;
+
+}
+
+h1{
+	color: #448ee4;
+	font-size: 25px;
+	font-family: Varela;
+}
+
+h1.aboutus{
+	color: #448ee4;
+	text-decoration: underline;
+	font-size: 35px;
+	text-align: center;
+	font-family: Varela;
+}
+
+p.description{
+	text-align: justify;
+	font-size: 25px;
+	font-family: Varela;
+	margin: 25px;
+}
+
+
+
